@@ -758,3 +758,78 @@ body {
 .mobile-version {
     display: none;
 }
+
+.from-about-field.main-form-input-block {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.input-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+    transition: all 0.5s;
+}
+
+.input-wrapper.hidden {
+    width: 0;
+}
+
+.input-wrapper input {
+    width: 100%;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 0.583rem;
+    font-weight: 700;
+    line-height: 0.817rem;
+    border: 0px;
+    border-bottom: 0.083rem solid #fff;
+    background-color: transparent;
+    padding-bottom: 1.1em;
+    padding-left: 1.36em;
+}
+
+.input-wrapper input::-webkit-input-placeholder {
+    color: #fff;
+}
+
+.input-wrapper input::-moz-placeholder {
+    color: #fff;
+}
+
+.btn-set {
+    display: flex;
+    width: 100%;
+    transition: all 0.5s;
+    /* align-items: center; */
+}
+
+.btn-set.hidden {
+    width: 0;
+}
+
+.btn-set button {
+    display: block;
+    width: 100%;
+    padding-bottom: 1.1em;
+    padding-left: 1.36em;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.583rem;
+    font-weight: 700;
+    line-height: 0.817rem;
+    color: #fff;
+    border: none;
+    border-bottom: 0.083rem solid #fff;
+    background: transparent;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn-set button.active {
+    border-bottom-color: #f54068;
+    color: #f54068;
+}

@@ -473,7 +473,7 @@ body {
     .top-row
     .right-side
     .form-field
-    .form-input::-webkit-input-placeholder {
+    > .form-input::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
     color: transparent;
 }
@@ -482,7 +482,7 @@ body {
     .top-row
     .right-side
     .form-field
-    .form-input::-moz-placeholder {
+    > .form-input::-moz-placeholder {
     /* Firefox 19+ */
     color: transparent;
 }
@@ -491,7 +491,7 @@ body {
     .top-row
     .right-side
     .form-field
-    .form-input:-ms-input-placeholder {
+    > .form-input:-ms-input-placeholder {
     /* IE 10+ */
     color: transparent;
 }
@@ -500,7 +500,7 @@ body {
     .top-row
     .right-side
     .form-field
-    .form-input:-moz-placeholder {
+    > .form-input:-moz-placeholder {
     /* Firefox 18- */
     color: transparent;
 }
@@ -510,7 +510,7 @@ body {
     .top-row
     .right-side
     .form-field
-    .form-input:focus
+    > .form-input:focus
     ~ .form-field-label {
     top: -1rem;
     font-size: 0.5rem;
@@ -533,47 +533,6 @@ body {
     width: 0;
 }
 
-.block-form
-    .callback-form
-    .top-row
-    .right-side
-    .form-field
-    .input-wrapper
-    .form-input::-webkit-input-placeholder {
-    /* Chrome/Opera/Safari */
-    color: transparent;
-}
-.block-form
-    .callback-form
-    .top-row
-    .right-side
-    .form-field
-    .input-wrapper
-    .form-input::-moz-placeholder {
-    /* Firefox 19+ */
-    color: transparent;
-}
-.block-form
-    .callback-form
-    .top-row
-    .right-side
-    .form-field
-    .input-wrapper
-    .form-input:-ms-input-placeholder {
-    /* IE 10+ */
-    color: transparent;
-}
-.block-form
-    .callback-form
-    .top-row
-    .right-side
-    .form-field
-    .input-wrapper
-    .form-input:-moz-placeholder {
-    /* Firefox 18- */
-    color: initial;
-}
-
 .block-form .callback-form .top-row .right-side .form-field .form-field-label {
     top: 0;
     left: 1rem;
@@ -591,7 +550,7 @@ body {
 .block-form .callback-form .top-row .right-side .form-field.from-about-field {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    /* align-items: center; */
     overflow: hidden;
 }
 
@@ -602,9 +561,9 @@ body {
     .form-field.from-about-field
     .btn-set {
     display: flex;
-    flex: 1;
-    justify-content: space-around;
-    align-items: center;
+    /* overflow: hidden; */
+    /* justify-content: space-around; */
+    /* align-items: center; */
     transition: all 0.5s;
     width: 100%;
 }
